@@ -4,9 +4,9 @@
     "keywords": [
         "pebble-app"
     ],
-    "name": "watchface-tutorial",
+    "name": "under-the-tree",
     "pebble": {
-        "displayName": "Tutorial Watchface",
+        "displayName": "Under the Tree",
         "enableMultiJS": true,
         "messageKeys": [],
         "projectType": "native",
@@ -14,10 +14,17 @@
             "media": [
                 {
                     "file": "images/under_the_tree_005_a.png",
-                    "name": "IMG_BACKGROUND",
+                    "name": "IMG_BGART_A",
                     "targetPlatforms": [
                         "gabbro"
                     ],
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/under_the_tree_icon.png",
+                    "menuIcon": true,
+                    "name": "ICON_UNDER",
+                    "targetPlatforms": null,
                     "type": "bitmap"
                 }
             ]
