@@ -11,7 +11,16 @@
         "messageKeys": [],
         "projectType": "native",
         "resources": {
-            "media": []
+            "media": [
+                {
+                    "file": "images/under_the_tree_005_a.png",
+                    "name": "IMG_BACKGROUND",
+                    "targetPlatforms": [
+                        "gabbro"
+                    ],
+                    "type": "bitmap"
+                }
+            ]
         },
         "sdkVersion": "3",
         "targetPlatforms": [
