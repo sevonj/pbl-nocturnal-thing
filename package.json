@@ -1,12 +1,12 @@
 {
-    "author": "MakeAwesomeHappen",
+    "author": "Sevonj",
     "dependencies": {},
     "keywords": [
         "pebble-app"
     ],
-    "name": "under-the-tree",
+    "name": "nocturnal-thing",
     "pebble": {
-        "displayName": "Under the Tree",
+        "displayName": "Nocturnal Thing",
         "enableMultiJS": true,
         "messageKeys": [],
         "projectType": "native",
