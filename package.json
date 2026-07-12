@@ -14,8 +14,9 @@
             "media": [
                 {
                     "file": "images/under_the_tree_005_a.png",
-                    "name": "IMG_BGART_A",
+                    "name": "IMG_BGART",
                     "targetPlatforms": [
+                        "emery",
                         "gabbro"
                     ],
                     "type": "bitmap"
@@ -61,6 +62,7 @@
         },
         "sdkVersion": "3",
         "targetPlatforms": [
+            "emery",
             "gabbro"
         ],
         "uuid": "d03a6a37-692a-42ed-9de4-291940a85685",

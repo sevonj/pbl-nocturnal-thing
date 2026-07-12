@@ -14,8 +14,15 @@ static GBitmap *s_bgart_bitmap;
 
 const int text_h = 34;
 const int text_w = 64;
+# ifdef PBL_PLATFORM_GABBRO
 const int hour_x = 104;
 const int hour_y = 82;
+const int bat_y = 8;
+# else // Emery
+const int hour_x = 104 - 57;
+const int hour_y = 82 - 9;
+const int bat_y = 6;
+# endif
 const int min_x = hour_x + 12;
 const int min_y = hour_y + 26;
 const int bat_w = 32;
@@ -64,7 +71,7 @@ static void main_window_load(Window *window) {
   GRect bounds = layer_get_bounds(window_layer);
 
   s_bgart_layer = bitmap_layer_create(bounds);
-  s_bgart_bitmap = gbitmap_create_with_resource(RESOURCE_ID_IMG_BGART_A);
+  s_bgart_bitmap = gbitmap_create_with_resource(RESOURCE_ID_IMG_BGART);
   bitmap_layer_set_bitmap(s_bgart_layer, s_bgart_bitmap);
   bitmap_layer_set_compositing_mode(s_bgart_layer, GCompOpSet);
 
@@ -81,7 +88,7 @@ static void main_window_load(Window *window) {
   text_layer_set_text_alignment(s_min_layer, GTextAlignmentLeft);
   
   int bat_x = (bounds.size.w - 12) / 2;
-  s_bat_layer = bitmap_layer_create(GRect(bat_x, bat_h, bat_w, bat_h));
+  s_bat_layer = bitmap_layer_create(GRect(bat_x, bat_y, bat_w, bat_h));
   s_bat_ch1_bitmap = gbitmap_create_with_resource(RESOURCE_ID_IMG_BAT_CH1);
   s_bat_ch2_bitmap = gbitmap_create_with_resource(RESOURCE_ID_IMG_BAT_CH2);
   s_bat_ch3_bitmap = gbitmap_create_with_resource(RESOURCE_ID_IMG_BAT_CH3);
