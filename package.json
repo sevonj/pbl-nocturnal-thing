@@ -26,6 +26,36 @@
                     "name": "ICON_UNDER",
                     "targetPlatforms": null,
                     "type": "bitmap"
+                },
+                {
+                    "file": "images/img_bat_ch1.png",
+                    "name": "IMG_BAT_CH1",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/img_bat_ch2.png",
+                    "name": "IMG_BAT_CH2",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/img_bat_ch3.png",
+                    "name": "IMG_BAT_CH3",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/img_bat_low.png",
+                    "name": "IMG_BAT_LOW",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/img_bat_full.png",
+                    "name": "IMG_BAT_FULL",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
                 }
             ]
         },
