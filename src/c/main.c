@@ -12,12 +12,12 @@ static GBitmap *s_bat_low_bitmap;
 static GBitmap *s_bat_full_bitmap;
 static GBitmap *s_bgart_bitmap;
 
-const int text_h = 28;
+const int text_h = 34;
 const int text_w = 64;
-const int hour_x = 112;
-const int hour_y = 86;
-const int min_x = hour_x + 8;
-const int min_y = hour_y + 24;
+const int hour_x = 104;
+const int hour_y = 82;
+const int min_x = hour_x + 12;
+const int min_y = hour_y + 26;
 const int bat_w = 32;
 const int bat_h = 11;
 const int bat_inner_w = 20;
@@ -71,13 +71,13 @@ static void main_window_load(Window *window) {
   s_hour_layer = text_layer_create(GRect(hour_x, hour_y, text_w, text_h));
   text_layer_set_background_color(s_hour_layer, GColorClear);
   text_layer_set_text_color(s_hour_layer, GColorBlack);
-  text_layer_set_font(s_hour_layer, fonts_get_system_font(FONT_KEY_GOTHIC_28_BOLD));
+  text_layer_set_font(s_hour_layer, fonts_get_system_font(FONT_KEY_BITHAM_30_BLACK));
   text_layer_set_text_alignment(s_hour_layer, GTextAlignmentLeft);
 
   s_min_layer = text_layer_create(GRect(min_x, min_y, text_w, text_h));
   text_layer_set_background_color(s_min_layer, GColorClear);
   text_layer_set_text_color(s_min_layer, GColorBlack);
-  text_layer_set_font(s_min_layer, fonts_get_system_font(FONT_KEY_GOTHIC_28_BOLD));
+  text_layer_set_font(s_min_layer, fonts_get_system_font(FONT_KEY_BITHAM_30_BLACK));
   text_layer_set_text_alignment(s_min_layer, GTextAlignmentLeft);
   
   int bat_x = (bounds.size.w - 12) / 2;
